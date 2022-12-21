@@ -1,5 +1,6 @@
 package thangndph20487.poly.foodappdelivery.Adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 
 import thangndph20487.poly.foodappdelivery.Domain.FoodDomain;
 import thangndph20487.poly.foodappdelivery.R;
+import thangndph20487.poly.foodappdelivery.ShowDetailActivity;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
 
@@ -42,11 +44,10 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
                 .load(drawableResourceId)
                 .into(holder.foodPic);
 
-        holder.addBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
+        holder.addBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(holder.itemView.getContext(), ShowDetailActivity.class);
+            intent.putExtra("object",foodDomains.get(position));
+            holder.itemView.getContext().startActivity(intent);
         });
     }
 
