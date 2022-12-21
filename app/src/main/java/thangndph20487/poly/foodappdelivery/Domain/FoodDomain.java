@@ -1,6 +1,8 @@
 package thangndph20487.poly.foodappdelivery.Domain;
 
-public class FoodDomain {
+import java.io.Serializable;
+
+public class FoodDomain implements Serializable {
     private String title;
     private String pic;
     private String desc;
