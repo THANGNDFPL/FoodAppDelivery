@@ -357,9 +357,9 @@
             android:backgroundTint="#ff5e00"
             android:elevation="3dp"
             android:src="@drawable/shopping_cart"
-            app:tint="#FFFFFF"
+            app:layout_anchor="@id/app_bar"
             app:maxImageSize="30dp"
-            app:layout_anchor="@id/app_bar" />
+            app:tint="#FFFFFF" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
