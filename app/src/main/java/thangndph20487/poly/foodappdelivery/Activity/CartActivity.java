@@ -1,4 +1,4 @@
-package thangndph20487.poly.foodappdelivery;
+package thangndph20487.poly.foodappdelivery.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +15,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import thangndph20487.poly.foodappdelivery.Adapter.CartAdapter;
 import thangndph20487.poly.foodappdelivery.Helper.ManagementCart;
+import thangndph20487.poly.foodappdelivery.IChangeNumberItemsListener;
+import thangndph20487.poly.foodappdelivery.R;
 
 public class CartActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
@@ -43,7 +45,7 @@ public class CartActivity extends AppCompatActivity {
 
         fab.setOnClickListener(v -> startActivity(new Intent(CartActivity.this,CartActivity.class)));
 
-        homeBtn.setOnClickListener(v -> startActivity(new Intent(CartActivity.this,MainActivity.class)));
+        homeBtn.setOnClickListener(v -> startActivity(new Intent(CartActivity.this, MainActivity.class)));
     }
 
     private void initList() {

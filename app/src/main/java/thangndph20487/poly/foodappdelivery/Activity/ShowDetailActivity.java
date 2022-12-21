@@ -1,4 +1,4 @@
-package thangndph20487.poly.foodappdelivery;
+package thangndph20487.poly.foodappdelivery.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide;
 
 import thangndph20487.poly.foodappdelivery.Domain.FoodDomain;
 import thangndph20487.poly.foodappdelivery.Helper.ManagementCart;
+import thangndph20487.poly.foodappdelivery.R;
 
 public class ShowDetailActivity extends AppCompatActivity {
     private TextView titleTxt,feeTxt,descriptionTxt,addToCartBtn,numberOrderTxt;

@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import thangndph20487.poly.foodappdelivery.Domain.FoodDomain;
 import thangndph20487.poly.foodappdelivery.R;
-import thangndph20487.poly.foodappdelivery.ShowDetailActivity;
+import thangndph20487.poly.foodappdelivery.Activity.ShowDetailActivity;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
 
